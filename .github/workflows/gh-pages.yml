@@ -9,7 +9,7 @@ jobs:
         ref: refs/heads/master
     - uses: actions/setup-node@master
       with:
-        node-version: latest
+        node-version: 12.x
     - name: npm install
       run: |
         npm install
