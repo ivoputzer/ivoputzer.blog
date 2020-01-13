@@ -1,0 +1,21 @@
+{
+  "name": "ivoputzer.blog",
+  "author": "Ivo von Putzer Reibegg <ivo.putzer@gmail.com> (https://ivoputzer.blog)",
+  "description": "A blog featuring Agile, Tech, Project Ideas, Reads, Events and everything else development-related.",
+  "homepage": "https://ivoputzer.blog",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "debug": "DEBUG=* npx @11ty/eleventy"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivoputzer/ivoputzer.blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ivoputzer/ivoputzer.blog/issues"
+  }
+}
