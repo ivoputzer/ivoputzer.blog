@@ -18,7 +18,7 @@ jobs:
         npm install
     - name: npm build
       run: |
-        npm run debug
+        npm run build
         touch _site/.nojekyll
         cat package.json | jq --raw-output ".name" > _site/CNAME
     - name: deploy
