@@ -20,7 +20,7 @@ jobs:
       run: |
         npm run debug
         touch _site/.nojekyll
-        cat package.json | jq ".name" > _site/CNAME
+        cat package.json | jq --raw-output ".name" > _site/CNAME
     - name: deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
