@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ivoputzer.blog</title>
+  <title>todo title</title>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156130355-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -11,17 +11,102 @@
     gtag('js', new Date());
     gtag('config', 'UA-156130355-1');
   </script>
-  <link href="/style.css" rel="stylesheet">
-</head>
-<body>
-  <img src="/img/whoami.jpg" alt="Ivo von Putzer Reibegg">
-  <header>
-    
-<h1>Coming Soon!</h1>
+  <style>
+    * {
+  box-sizing: border-box;
+}
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  width: 100vw;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: Helvetica,sans-serif;
+  color: #333;
+}
+
+main {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 80vw;
+  max-width: 500px;
+  border-radius: 50%;
+}
+
+header {
+  background: #333;
+  color: white;
+  margin-top: -2rem;
+  padding: 0 .5rem;
+  transform: skewY(-5deg);
+  text-align: center;
+}
+header h1 {
+  min-width: 40vw;
+  max-width: 80vw;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: .75rem;
+}
+
+footer a {
+  margin: 0 1rem;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: underline;;
+}
+
+  </style>
+</head>
+
+<body>
+  
+  
+<main>
+  <img src="/data/whoami.jpg" alt="Ivo von Putzer Reibegg">
+  <header>
+    <h1>Coming Soon!</h1>
   </header>
+</main>
+
+
+
   <footer>
-    <a href="https://github.com/ivoputzer">Github</a> - <a href="https://twitter.com/ivoputzer">Twitter</a> - <a href="https://t.me/ivoputzer">Telegram</a> - 2020 © Ivo von Putzer Reibegg
-  </footer>
+  <a href="https://github.com/ivoputzer">Github</a>
+  <a href="https://twitter.com/ivoputzer">Twitter</a>
+  <a href="https://t.me/ivoputzer">Telegram</a>
+</footer>
+
 </body>
 </html>
