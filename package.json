@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
+    "start": "eleventy --serve",
     "build": "npx @11ty/eleventy",
     "debug": "DEBUG=* npx @11ty/eleventy"
   },
@@ -17,5 +17,12 @@
   },
   "bugs": {
     "url": "https://github.com/ivoputzer/ivoputzer.blog/issues"
+  },
+  "dependencies": {
+    "pug": "^2.0.4",
+    "stylus": "^0.54.7"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
   }
 }
