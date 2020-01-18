@@ -1,0 +1,22 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{title}}{{site}}</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156130355-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-156130355-1');
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Love+Ya+Like+A+Sister|Merriweather|Merriweather+Sans|Montserrat|Puritan|Wellfleet|Exo:900|Teko:700&display=swap" rel="stylesheet">
+  {# <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans&display=swap" rel="stylesheet"> #}
+  {% set style %}
+    {% include "reset.css" %}
+    {% include "typography.css" %}
+    {% include "theme.css" %}
+  {% endset %}
+  <style>
+    {{ style | mincss | safe }}
+  </style>
+</head>

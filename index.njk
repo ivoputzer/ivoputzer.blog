@@ -1,0 +1,28 @@
+---
+title: ivoputzer.blog
+layout: page
+pagination:
+  data: collections.article
+  size: 10
+  reverse: true
+  alias: articles
+---
+<main class="fade-in">
+{% for article in articles %}
+  <article>
+    <header>
+      <h1>
+        <a href="{{ article.url | url }}">{{ article.data.title }}</a>
+      </h1>
+      <p>
+        Posted on
+        <time datetime="2015-05-16 19:00">{{ article.date }}</time>
+      </p>
+      <span>About {{ article | readingTime }} reading time</span>
+    </header>
+    <p>{% excerpt article %}</p>
+    <a href="{{ article.url | url }}">Continue Reading...</a>
+  </article>
+{% endfor %}
+</main>
+<!-- {% include "footer.njk" %} -->

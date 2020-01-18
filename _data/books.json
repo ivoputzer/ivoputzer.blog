@@ -1,0 +1,563 @@
+[
+  {
+    "title": "The art of agile development",
+    "author": ["James Shore", "Shane Warden"]
+  },
+  {
+    "title": "IOTA",
+    "subtitle": "Introduction to the Tangle Technology",
+    "author": ["Roman Alexander"]
+  },
+  {
+    "title": "IOTA",
+    "author": ["Siddartha Tuladhar"]
+  },
+  {
+    "title": "It Doesn't Have to be Crazy at Work",
+    "author": ["Jason Fried", "David Heinemeier Hansson"]
+  },
+  {
+    "title": "Da Te Solo a Tutto il Mondo",
+    "author": ["Jared Diamond"],
+    "lang": "it",
+    "original": {}
+  },
+  {
+    "title": "Collasso",
+    "author": ["Jared Diamond"],
+    "lang": "it",
+    "original": {}
+  },
+  {
+    "title": "Let My People Go Surfing",
+    "author": ["Yvon Chouinard"]
+  },
+  {
+    "title": "Grinta",
+    "subtitle": "Il potere della passione e della perseveranza",
+    "author": ["Angela Duckworth"],
+    "lang": "it",
+    "original": {}
+  },
+  {
+    "title": "In viaggio con l'asino",
+    "author": ["Andrea Bocconi", "Claudio Visentin"],
+    "lang": "it",
+    "original": {}
+  },
+  {
+    "title": "La gioia dei numeri",
+    "subtitle": "Viaggio nella matematica da uno a infinito",
+    "author": ["Steven Strogatz"],
+    "lang": "it",
+    "original": {}
+  },
+  {
+    "title": "Stillness is the Key",
+    "subtitle": "An Ancient Strategy for Modern Life",
+    "author": ["Ryan Holiday"]
+  },
+  {
+    "title": "Why We Sleep",
+    "subtitle": "The New Science of Sleep and Dreams",
+    "author": ["Matthew Walker"]
+  },
+  {
+    "title": "The Obstacle is the Way",
+    "subtitle": "The Ancient Art of Turning Adversity to Advantage",
+    "author": ["Ryan Holiday"]
+  },
+  {
+    "title": "The Age of Surveillance Capitalism",
+    "subtitle": ": The Fight for a Human Future at the New Frontier of Power",
+    "author": ["Shoshana Zuboff"]
+  },
+  {
+    "title": "Holacracy",
+    "subtitle": "The New Management System for a Rapidly Changing",
+    "author": ["Brian J. Robertson"]
+  },
+  {
+    "title": "Reinventing Organizations",
+    "subtitle": "An Illustrated Invitation to Join the Conversation on Next-Stage Organizations",
+    "author": ["Frederic Laloux"]
+  },
+  {
+    "title": "Blue Ocean Strategy",
+    "subtitle": "How to Create Uncontested Market Space and Make the Competition Irrelevant",
+    "author": ["W. Chan Kim", "Renee Mauborgne"]
+  },
+  {
+    "title": "AEquacy",
+    "subtitle": "The new human-centered organization design to thrive in a complex world.",
+    "author": ["Giovanna D'Alessio", "Stefano Petti"]
+  },
+  {
+    "title": "Business Model Generation",
+    "subtitle": "A Handbook for Visionaries, Game Changers, and Challengers",
+    "author": ["Alexander Osterwalder", "Yves Pigneur"]
+  },
+  {
+    "title": "Building Progressive Web Apps",
+    "subtitle": "Bringing the Power of Native to the Browser",
+    "author": ["Tal Ater"]
+  },
+  {
+    "title": "The Lean Startup",
+    "subtitle": "How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses",
+    "author": ["Eric Ries"]
+  },
+  {
+    "title": "Lean Analytics",
+    "subtitle": "Use Data to Build a Better Startup Faster",
+    "author": ["Alistair Croll", "Benjamin Yoskovitz"]
+  },
+  {
+    "title": "The Secrets of Consulting",
+    "subtitle": "Giving & Getting Advice Successfully",
+    "author": ["Gerald M. Weinberg"]
+  },
+  {
+    "title": "The Culture Code",
+    "subtitle": "The Secrets of Highly Successful Groups",
+    "author": ["Daniel Coyle"]
+  },
+  {
+    "title": "The Goal",
+    "subtitle": "A Process of Ongoing Improvement",
+    "author": ["Eliyahu M. Goldratt", "Jeff Cox"]
+  },
+  {
+    "title": "Good To Great",
+    "subtitle": "Why some companies make the leap ... and others don't",
+    "author": ["Jim Collins"]
+  },
+  {
+    "title": "Built to Last",
+    "subtitle": "Successful Habits of Visionary Companies",
+    "author": ["Jim Collins", "Jerry I. Porras"]
+  },
+
+  {
+    "title": "Lean Thinking",
+    "subtitle": "Come creare valore e bandire gli sprechi",
+    "author": ["James P. Womack", "Daniel T. Jones"],
+    "lang": "it",
+    "original": {}
+  },
+  {
+    "title": "Slack",
+    "subtitle": "Getting Past Burnout, Busywork, and the Myth of Total Efficiency",
+    "authro": ["Tom Demarco"]
+  },
+  {
+    "title": "Mastering Ethereum",
+    "subtitle": "Building Smart Contracts and Dapps",
+    "author": ["Andreas M. Antonopoulos", "Gavin Wood"]
+  },
+  {
+    "title": "The Internet of Money",
+    "subtitle": "Volume Two",
+    "author": ["Andreas M. Antonopoulos"]
+  },
+  {
+    "title": "The Internet of Money",
+    "subtitle": "Volume One",
+    "author": ["Andreas M. Antonopoulos"]
+  },
+  {
+    "title": "Mastering Monero",
+    "subtitle": "The future of private transactions",
+    "author":  ["SerHack"]
+  },
+  {
+    "title": "Programming Bitcoin",
+    "subtitle": "Learn How to Program Bitcoin from Scratch",
+    "author": ["Jimmy Song"]
+  },
+  {
+    "title": "Questo è il marketing",
+    "subtitle": "Non puoi essere visto finché non impari a vedere",
+    "author": ["Seth Godin"],
+    "lang": "it",
+    "original": {}
+  },
+  {
+    "title": "Creare prodotti e servizi per catturare i clienti",
+    "author": ["Seth Godin"],
+    "lang": "it",
+    "original": {
+      "title": "Hooked"
+    }
+  },
+  {
+    "title": "Zero to One",
+    "subtitle": "Notes on Start Ups, or How to Build the Future",
+    "author": ["Peter Thiel"]
+  },
+  {
+    "title": "Startup",
+    "subtitle": "Sogna, Credici, Realizza. Dall’idea al successo",
+    "author": ["Eleonora Chioda", "Giancarlo Donadio", "Lucia Ingrosso", "Tiziana Tripepi"],
+    "lang": "it"
+  },
+  {
+    "title": "Running Lean",
+    "subtitle": "Iterate from Plan A to a Plan That Works",
+    "author": ["Ash Maurya"]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "title": "Building Evolutionary Architectures: Support Constant Change",
+    "date": "2018-09-06"
+  },
+  {
+    "title": "Learning Graphql: Declarative Data Fetching for Modern Web Apps",
+    "date": "2018-09-07"
+  },
+  {
+    "title": "Remote: Office Not Required",
+    "date": "2018-10-18"
+  },
+  {
+    "title": "Mastering Bitcoin: Programming the Open Blockchain",
+    "date": "2018-10-18"
+  },
+  {
+    "title": "Introducing Ethereum and Solidity: Foundations of Cryptocurrency and Blockchain Programming for Beginners",
+    "date": "2018-10-18"
+  },
+  {
+    "title": "Solidity Programming Essentials: A beginner's guide to build smart contracts for Ethereum and blockchain",
+    "date": "2018-10-18"
+  },
+  {
+    "title": "Essential Scrum: A Practical Guide to the Most Popular Agile Process",
+    "date": "2018-10-18"
+  },
+  {
+    "title": "The Business Blockchain: Promise, Practice, and Application of the Next Internet Technology",
+    "date": "2018-10-18"
+  },
+  {
+    "title": "Reactive Messaging Patterns With the Actor Model: Applications and Integration in Scala and Akka",
+    "date": "2018-10-18"
+  },
+  {
+    "title": "Agile Estimating And Planning",
+    "date": "2018-10-18"
+  },
+  {
+    "title": "Mapping Experiences: A Guide to Creating Value through Journeys, Blueprints, and Diagrams",
+    "date": "2018-10-18"
+  },
+  {
+    "title": "User Stories Applied: For Agile Software Development",
+    "date": "2018-10-18"
+  },
+  {
+    "title": "Deep Work: Rules for Focused Success in a Distracted World",
+    "date": "2018-10-18"
+  },
+  {
+    "title": "Lean Enterprise: How High Performance Organizations Innovate at Scale",
+    "date": "2018-10-18"
+  },
+  {
+    "title": "Blockchain 3.0: Why Bitcoin, Ethereum and the Other Cryptocurrencies Are Built on an Ancient Technology and How the Tangle Will Replace Them.",
+    "date": "2018-10-18"
+  },
+  {
+    "title": "Exploring CQRS and Event Sourcing: A journey into high scalability, availability, and maintainability with Windows Azure",
+    "date": "2018-10-18"
+  },
+  {
+    "title": "Neural Networks and Deep Learning: Neural Networks and Deep Learning, Deep Learning Explained to Your Granny",
+    "date": "2018-10-18"
+  },
+  {
+    "title": "Make Your Own Neural Network: An In-depth Visual Introduction For Beginners",
+    "date": "2018-10-18"
+  },
+  {
+    "title": "Building Blockchain Projects: Building decentralized Blockchain applications with Ethereum and Solidity",
+    "date": "2018-10-18"
+  },
+
+
+  {
+    "title": "Neural Networks",
+    "subtitle": "A Visual Introduction For Beginners",
+    "author": "michael taylor"
+  },
+
+
+
+  {
+    "title": "Progressive Web Apps",
+    "date": "2018-03-28"
+  },
+  {
+    "title": "Node.js Design Patterns { Second Edition",
+    "date": "2018-03-28"
+  },
+  {
+    "title": "Peopleware",
+    "date": "2018-03-28"
+  },
+  {
+    "title": "Zero Bugs and Program Faster",
+    "date": "2018-03-28"
+  },
+  {
+    "title": "Soft Skills: The software developer's life manual",
+    "date": "2018-03-28"
+  },
+  {
+    "title": "The Go Programming Language",
+    "date": "2018-03-28"
+  },
+  {
+    "title": "The Principles of Object-Oriented JavaScript",
+    "date": "2018-03-28"
+  },
+  {
+    "title": "Spring In Action, 4Th Edn",
+    "date": "2018-03-28"
+  },
+  {
+    "title": "Test-Driven JavaScript Development",
+    "date": "2018-03-28"
+  },
+  {
+    "title": "You Don't Know JS: this & Object Prototypes",
+    "date": "2017-05-24"
+  },
+  {
+    "title": "You Don't Know JS: Scope & Closures",
+    "date": "2017-05-24"
+  },
+  {
+    "title": "You Don't Know JS: Up & Going",
+    "date": "2017-05-24"
+  },
+  {
+    "title": "You Don't Know JS: ES6 & Beyond",
+    "date": "2017-05-31"
+  },
+  {
+    "title": "You Don't Know JS: Async & Performance",
+    "date": "2017-05-31"
+  },
+  {
+    "title": "You Don't Know JS: Types & Grammar",
+    "date": "2017-05-31"
+  },
+  {
+    "title": "JavaScript: The Good Parts",
+    "date": "2017-05-31"
+  },
+  {
+    "title": "Secrets of the Javascript Ninja",
+    "date": "2017-05-31"
+  },
+  {
+    "title": "eXtreme Programming Explained",
+    "subtitle": "Embrace change",
+    "author": "Kent Beck"
+  },
+
+  {
+    "title": "L'etica hacker",
+    "subtitle": "e lo spirito dell'età dell'informazione",
+    "authro": "Pekka Himanen",
+    "date": "2017-08-06",
+    "started": null,
+    "finished": null
+  },
+
+  {
+    "title": "The gigantic beard that was evil",
+    "author": "Steven Collins",
+    "date": "2016-02-14"
+  },
+
+  {
+    "title": "The healthy programmer",
+    "subtitle": "Get Fit, Feel better, and Keep Coding",
+    "author": "Joe Kutner"
+
+  },
+
+  {
+    "title": "Remote",
+    "subtitle": "Office Not Required",
+    "author": ["Jason Fried", "David Heinemeier Hansson"]
+
+  },
+
+  {
+    "title": "No Logo",
+    "author": "Naomi Klein",
+    "date": "2018-02-14"
+  },
+
+  {
+    "title": "Elixir in action",
+    "author": "Saša Juric"
+  },
+
+  {
+    "title": "The mythical man-month",
+    "author": "Frederick P. Brooks, JR."
+  },
+
+  {
+    "title": "Functinal Thinking",
+    "subtitle": "Paradigm over syntax",
+    "author": "Neal Ford"
+  },
+
+  {
+    "title": "Damn Good Advice",
+    "subtitle": "(For people with talent!)",
+    "author":"George Lois",
+    "date": "2017-06-22"
+  },
+  {
+    "title": "Ansible for DevOps",
+    "subtitle": "Server and configuration management for humans",
+    "author": "Jeff Geerling"
+  },
+  {
+    "title": "clean code",
+    "subtitle": "a handbook of agile software craftmanship",
+    "author": "Rober C. Martin"
+  },
+
+
+
+  {
+    "title": "The Never-Ending Search for the Edge of the Universe",
+    "subtitle": "An Excercise in profound futility",
+    "author": ["Yellow Mushmellow and Frederick Low"],
+    "date": "2017-?"
+  },
+
+  {
+    "title": "Deep Dark Fears",
+    "author": "Fran Krause"
+  },
+
+  {
+    "title": "Programming Elixir",
+    "subtitle": "Functional |> Concurrent |> Pragmatic |> Fun",
+    "author": "Dave Thomas"
+  },
+
+
+  {
+    "title": "effective javascript",
+    "subtitle": "68 Specific Ways to Harness the Power of JavaScript"
+  },
+
+
+  {
+    "title": "On the expression of the emotions in man and animals",
+    "author": "charles darwin"
+  },
+
+  {
+    "title": "JavaScript Design Pattern",
+    "author": "Addy Osmani"
+  },
+
+  {
+    "title": "The Agile Samurai",
+    "subtitle": "How Agile Masters Deliver Great Software",
+    "author": "Jonathan Rasmusson"
+  },
+
+  {
+    "title": "Test-Driven Development",
+    "subtitle": "By Example",
+    "author": "Kent Beck"
+  },
+
+  {
+    "title": "Functional-Light JavaScript",
+    "subtitle": "Balanced, Pragmatic FP in JavaScript",
+    "author": "Kyle Simpson",
+    "date": "2018-02-25"
+  },
+
+
+  {
+    "title": "L'ordine del tempo",
+    "lang": "it",
+    "author": "Carlo Rovelli"
+  },
+
+  {
+    "title": "It's Not How Good you are, It's how good you want to be.",
+    "author": "Paul Arden",
+    "date": "2017-06-21"
+  },
+
+  {
+    "title": "Refactoring to patterns",
+    "author": "Joshua Kerievsky"
+  },
+
+  {
+    "title": "Lean Software Development",
+    "subtitle":"An Agile Toolkit",
+    "author": ["Mary Poppendieck", "Tom Poppendieck"]
+  },
+
+  {
+    "title": "The Pragmatic Programmer",
+    "date": "2013-10-01",
+    "author": ["Andrew Hunt", "David Thomas"]
+  }
+]

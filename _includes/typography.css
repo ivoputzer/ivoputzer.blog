@@ -1,0 +1,224 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+
+h4, h5, h6, dl, ol, ul, p, pre {
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+}
+
+h4 {
+	font-size: 1.13rem;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+	line-height: 1.5rem;
+	font-weight: 400;
+}
+
+img {
+	width: auto;
+	max-width: 100%;
+}
+
+body {
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%;
+	font-size: 1.5rem;
+}
+
+table {
+	width: 100%;
+	font-size: 1.125rem;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td,
+table > tfoot > tr > th,
+table > tfoot > tr > td {
+	padding: 12px;
+	line-height: 1.2;
+	vertical-align: top;
+	border-top: 1px solid #333;
+}
+
+table > thead > tr > th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #333;
+}
+
+table > caption + thead > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > th,
+table > thead:first-child > tr:first-child > td {
+	border-top: 0;
+}
+
+table > tbody + tbody {
+	border-top: 2px solid #333;
+}
+
+a {
+  color:var(--brand-color-primary);
+  text-decoration:none;
+}
+
+a:focus,
+a:hover {
+  color:var(--brand-color-primary-offset);
+}
+
+p {
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+abbr {
+	border-bottom: 1px black dotted;
+	cursor: help;
+}
+
+pre,
+code {
+	font-family: monospace;
+}
+
+code {
+	color: #7a7a7a;
+}
+
+blockquote {
+	padding: 1.33em;
+	font-style: italic;
+	border-left: 5px solid #7a7a7a;
+	color: #555;
+}
+
+blockquote em {
+	color: #000;
+}
+
+blockquote footer {
+	font-size: .85rem;
+	font-style: normal;
+	background-color: #fff;
+	color: #7a7a7a;
+	border-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: bold;
+	line-height: 1.2;
+	margin: 1em 0 0.5em;
+}
+
+@media screen and (min-width: 48em) {
+	h1 {
+		font-size: 3.250rem;
+	}
+	h2 {
+		font-size: 2.298rem;
+	}
+	h3 {
+		font-size: 1.625rem;
+	}
+	h4 {
+		font-size: 1.3rem;
+	}
+	p, li {
+		font-size: 1.25rem;
+		line-height: 1.8;
+	}
+	table {
+		font-size: 1.25rem;
+	}
+}
+
+@media (max-width: 48em) {
+	blockquote {
+		margin-left: 1rem;
+		margin-right: 0;
+		padding: 0.5em;
+	}
+	h1 {
+		font-size: 2.827rem;
+	}
+	h2 {
+		font-size: 1.999rem;
+	}
+	h3 {
+		font-size: 1.413rem;
+	}
+	h4 {
+		font-size: 1.3rem;
+	}
+}
+
+@media screen and (min-width: 64em) {
+	h1 {
+		font-size: 4.498rem;
+	}
+	h2 {
+		font-size: 2.29rem;
+	}
+	h3 {
+		font-size: 1.9rem;
+	}
+	h4 {
+		font-size: 1.591rem;
+	}
+}
+
+ */

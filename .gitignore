@@ -1,5 +1,5 @@
 node_modules/
-web/
+draft/
+_site/
 .ssh/
 todo.md
-
