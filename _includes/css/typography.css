@@ -115,6 +115,7 @@ blockquote {
 	color: #555;
 }
 
+
 blockquote em {
 	color: #000;
 }
@@ -125,43 +126,6 @@ blockquote footer {
 	background-color: #fff;
 	color: #7a7a7a;
 	border-color: transparent;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Merriweather Sans', sans-serif;
-	font-weight: bold;
-	line-height: 1.2;
-	margin: 1em 0 0.5em;
 }
 
 @media screen and (min-width: 48em) {
@@ -184,6 +148,18 @@ h6 {
 	table {
 		font-size: 1.25rem;
 	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: bold;
+	line-height: 1.2;
+	margin: 1em 0 0.5em;
 }
 
 @media (max-width: 48em) {
@@ -209,7 +185,8 @@ h6 {
 @media screen and (min-width: 64em) {
 	h1 {
 		font-size: 4.498rem;
-	}
+  }
+
 	h2 {
 		font-size: 2.29rem;
 	}
@@ -220,5 +197,3 @@ h6 {
 		font-size: 1.591rem;
 	}
 }
-
- */

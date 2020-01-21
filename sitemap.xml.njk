@@ -1,0 +1,14 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{# https://www.sitemaps.org/protocol.html#xmlTagDefinitions #}
+  {% for page in collections.all %}<url>
+    <loc>{{ page.url | absoluteUrl(config.url) }}</loc>
+    <lastmod>{{ page.date.toISOString() }}</lastmod>
+    <changefreq>{{ page.data.sitemap.changes or "monthly" }}</changefreq>
+    <priority>{{ page.data.sitemap.priority or "0.5" }}</priority>
+  </url>{% endfor %}
+</urlset>

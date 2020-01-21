@@ -1,0 +1,249 @@
+/*
+  jsut style definitions for sematic tags
+
+  :root
+  ::selection
+
+  html
+  body
+
+  nav
+
+  header
+  footer
+
+  main
+  main header
+  main footer
+  main article
+  main article header
+  main article footer
+
+  article
+  article header
+  article footer
+
+
+*/
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 1024px;
+
+  color: var(--text-color);
+}
+
+main {
+  flex: 1;
+}
+
+figure, img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/********************************************** FOOTER ************************************************/
+
+body > footer {
+  margin: 10rem -2rem 0 -2rem;
+}
+
+body > footer ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content:space-between;
+
+}
+
+body > footer li {
+  flex: 1;
+  margin: 0 .5rem;
+  height: 7.5rem;
+}
+
+body > footer li:hover {
+  height: 8rem;
+
+}
+
+body > footer a {
+  padding: 1rem .75rem 0 .75rem;
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+}
+
+body > footer svg {
+  fill: white;
+  display: block;
+}
+
+body > footer li.sitemap { background: var(--color-rss) }
+body > footer li.rss { background: var(--color-rss) }
+body > footer li.github { background: var(--color-github) }
+body > footer li.twitter { background: var(--color-twitter) }
+body > footer li.instagram { background: var(--color-instagram) }
+body > footer li.npm { background: var(--color-npm) }
+body > footer li.linkedin { background: var(--color-linkedin) }
+body > footer li.telegram { background: var(--color-telegram) }
+body > footer li.stackoverflow { background: var(--color-stackoverflow) }
+body > footer li.codepen { background: var(--color-codepen) }
+body > footer li.coinbase { background: var(--color-coinbase) }
+body > footer li.brave { background: var(--color-brave) }
+
+/********************************************** ARTICLE ***********************************************/
+
+article strong,
+article strong em {
+  display: inline-block;
+  position: relative;
+}
+
+article strong em {
+  font-style: inherit;
+}
+
+article strong::before,
+article strong em::before {
+	content: '';
+	display: block;
+	height: .5em;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  z-index: -1;
+  background-color: var(--border-color);
+}
+
+article strong em::before {
+  background-color: var(--brand-color-primary);
+}
+
+/********************************************* NAVIGATION *********************************************/
+
+nav {
+  display: flex;
+  align-items:center;
+  font-family: 'Exo', sans-serif;
+  padding: 2rem 0;
+}
+
+nav figure {
+  flex: 1;
+  margin: 0;
+  font-size: 2.75rem;
+}
+
+nav small {
+  font-size: 1rem;
+}
+
+nav ul {
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  position: relative;
+}
+
+nav li::after {
+  display: block;
+  position: absolute;
+  content: '';
+  height: 5px;
+  bottom: -5px;
+  background-color: var(--border-color);
+  left:1.25rem;
+  right:1.25rem;
+  transform:scaleX(0);
+  transform-origin:0 50%;
+  transition: transform .3s cubic-bezier(.86,0,.07,1);
+}
+
+nav li:hover::after {
+  transform:scaleX(1)
+}
+
+nav li.active::after {
+  background-color:var(--brand-color-primary)!important;
+  transform:none;
+}
+
+nav li a {
+  display:flex;
+  z-index:1;
+  padding:.75rem 1.25rem;
+  white-space:nowrap;
+  line-height:1;
+  font-size: 1.25rem;
+  text-transform:uppercase;
+  text-decoration: none; color:var(--text-color);
+  transition:color .2s linear;
+}
+
+nav li a:focus,
+nav li a:hover {
+  color:var(--text-color)
+}
+
+@media screen and (orientation: portrait) {
+  nav {
+    padding: 0;
+  }
+  .no-portrait {
+    display: none;
+  }
+
+  footer li {
+    margin: 0 !important;
+  }
+}
+
+/* EFFECTS */
+
+.fade-in {
+  transform:translate3d(0,0,0);
+  backface-visibility:hidden;
+  perspective:1000;
+  animation:fade-in .5s ease;
+}
+
+
+@media (prefers-reduced-motion:reduce){
+  * {
+    animation-duration:0s!important;
+    transition-duration:0s!important;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity:0;
+    transform:translateY(20px)
+  }
+  100% {
+    opacity:1;
+    transform:translateY(0)
+  }
+}

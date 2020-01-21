@@ -13,9 +13,10 @@
   <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Love+Ya+Like+A+Sister|Merriweather|Merriweather+Sans|Montserrat|Puritan|Wellfleet|Exo:900|Teko:700&display=swap" rel="stylesheet">
   {# <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans&display=swap" rel="stylesheet"> #}
   {% set style %}
-    {% include "reset.css" %}
-    {% include "typography.css" %}
-    {% include "theme.css" %}
+    {% include "css/reset.css" %}
+    {% include "css/typography.css" %}
+    {% include "css/theme.css" %}
+    {% include "css/link.css" %}
   {% endset %}
   <style>
     {{ style | mincss | safe }}

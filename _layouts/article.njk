@@ -2,5 +2,12 @@
 layout: base
 ---
 <article class="fade-in">
-  {{ content | safe }}
+  <header>
+    {% if cover %}
+      <img src="{{ cover.src }}" alt="{{ cover.alt }}">
+    {% endif %}
+    <h1>{{ title }}</h1>
+    {% excerpt content %}
+  </header>
+    {% body content %}
 </article>
