@@ -29,7 +29,7 @@ A Lot of things happened around here these years. Back in 2010, I started a busi
 
 I have many project ideas that I am willing to disclose and to develop in the near feature. I'll be posting honest progress and insights on those ideas to explore any kind of feedback as well as give you a sneak peek into what I am doing every day.
 
-## Let's talk about the blog
+## Let's talk about the blog
 I wanted a fresh start, that's why I decided to go from scratch instead of resuming the one I already had. I'm sure nobody will mind that too much!
 
 
