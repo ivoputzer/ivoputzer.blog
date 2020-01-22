@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <em>Github Pages · Eleventy · HTML · CSS · JAVASCRIPT</em>
+  <em>Github Pages · Eleventy · JavaScript · HTML · CSS</em>
   <br>
   <br>
   <a href="https://actions-badge.atrox.dev/ivoputzer/ivoputzer.blog/goto?ref=master">
