@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-scheme: 'light';
+  --bg-color: #fff;
+  --bg-color-semitransparent: rgba(255, 255, 255, 0.85);
+  --bg-color-secondary: #f7f7f9;
+  --text-color: #373a3c;
+  --text-color-secondary: #818a91;
+  --border-color: #eceeef;
+  --brand-color-primary: #ff335f;
+  --brand-color-primary-offset: #ff1447;
+  --brand-color-secondary: #43a9a3;
+  /*
+    https://simpleicons.org/
+  */
+  --color-linkedin: #0077B5;
+  --color-twitter: #1DA1F2;
+  --color-instagram: #E4405F;
+  --color-telegram: #2CA5E0;
+  --color-npm: #CB3837;
+  --color-rss: #FFA500;
+  --color-tor: #7E4798;
+  --color-git: #F05032;
+  --color-github: #181717;
+  --color-brave: #FB542B;
+  --color-coinbase: #0667D0;
+  --color-bitcoin: #F7931A;
+  --color-litecoin: #A6A9AA;
+  --color-ethereum: #3C3C3D;
+  --color-html5: #E34F26;
+  --color-css3: #1572B6;
+  --color-js: #F7DF1E;
+  --color-python: #3776AB;
+  --color-creative-commons: #EF9421;
+  --color-reddit: #FF4500;
+  --color-gitlab: #FCA121;
+  --color-bitbucket: #0052CC;
+  --color-trello: #0079BF;
+  --color-travis: #3EAAAF;
+  --color-stackoverflow: #FE7A16;
+  --color-codepen: #000000;
+}
+
+@media (prefers-color-scheme:dark) {
+  :root {
+    --color-scheme: 'dark'
+  }
+}
+
+:root.dark {
+  --bg-color: #1d1f21;
+  --bg-color-semitransparent: rgba(33, 33, 33, 0.75);
+  --bg-color-secondary: #252526;
+  --text-color: #ffffff;
+  --text-color-secondary: #818a91;
+  --border-color: #2d2d2d;
+  --brand-color-primary: #ff5277;
+  --brand-color-primary-offset: #ff2957;
+  --brand-color-secondary: #43a9a3
+}
+
+::-moz-selection {
+  background:var(--brand-color-secondary);
+  color:#fff
+}
+
+::selection {
+  background:var(--brand-color-secondary);
+  color:#fff
+}
+
+::-moz-selection {
+  background:var(--brand-color-secondary);
+  color:#fff
+}
