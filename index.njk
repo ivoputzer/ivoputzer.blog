@@ -1,5 +1,4 @@
 ---
-title: ivoputzer.blog
 layout: page
 pagination:
   data: collections.articles
@@ -9,32 +8,6 @@ sitemap:
   priority: 1
   changes: daily
 ---
-<style>
-  main article footer {
-    display: flex;
-    justify-content: space-between;
-    margin: 4rem 0 0 0;
-    font-family: 'Merriweather Sans',sans-serif;
-  }
-
-  main article footer :first-child {
-    flex: 1;
-  }
-
-  .publication-date,
-  .reading-time {
-    font-size: 1rem;
-    align-self: flex-end;
-    margin-left: 2rem;
-  }
-
-  .publication-date time,
-  .reading-time span {
-    background: var(--brand-color-primary);
-    color: #fff;
-    padding: .2rem 1.1rem;
-  }
-</style>
 <main class="fade-in">
 {% for article in pagination.items %}
   <article>
@@ -46,9 +19,7 @@ sitemap:
           </a>
         </h1>
       </header>
-
       {% excerpt article.templateContent %}
-
       <footer>
         <span>
           <a class="cta" style="line-height: 1.15" href="{{ article.url | url }}">

@@ -60,7 +60,7 @@ figure, img {
 /********************************************** FOOTER ************************************************/
 
 body > footer {
-  margin: 10rem -2rem 0 -2rem;
+  margin: 5rem -2rem 0 -2rem;
 }
 
 body > footer ul {
@@ -110,7 +110,6 @@ body > footer li.brave { background: var(--color-brave) }
 
 /********************************************** ARTICLE ***********************************************/
 
-article strong,
 article strong em {
   display: inline-block;
   position: relative;
@@ -120,7 +119,6 @@ article strong em {
   font-style: inherit;
 }
 
-article strong::before,
 article strong em::before {
 	content: '';
 	display: block;
@@ -130,10 +128,6 @@ article strong em::before {
 	right: 0;
 	bottom: 0;
   z-index: -1;
-  background-color: var(--border-color);
-}
-
-article strong em::before {
   background-color: var(--brand-color-primary);
 }
 
@@ -181,6 +175,10 @@ nav li::after {
   transition: transform .3s cubic-bezier(.86,0,.07,1);
 }
 
+nav li:last-child::after {
+  right: 0;
+}
+
 nav li:hover::after {
   transform:scaleX(1)
 }
@@ -200,6 +198,10 @@ nav li a {
   text-transform:uppercase;
   text-decoration: none; color:var(--text-color);
   transition:color .2s linear;
+}
+
+nav li:last-child a {
+  padding-right: 0;
 }
 
 nav li a:focus,
@@ -246,4 +248,30 @@ nav li a:hover {
     opacity:1;
     transform:translateY(0)
   }
+}
+
+
+main article footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0 0 0;
+  font-family: 'Merriweather Sans',sans-serif;
+}
+
+main article footer :first-child {
+  flex: 1;
+}
+
+.publication-date,
+.reading-time {
+  font-size: 1rem;
+  align-self: flex-end;
+  margin-left: 2rem;
+}
+
+.publication-date time,
+.reading-time span {
+  background: var(--brand-color-primary);
+  color: #fff;
+  padding: .2rem 1.1rem;
 }

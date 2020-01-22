@@ -1,17 +1,20 @@
 <head>
+  <title>{{ title or config.title }}</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="canonical" href="{{ page.url | absoluteUrl(config.url) }}">
-  <title>{{title}}{{site}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="{{ meta.author or config.meta.author }}">
+  <meta name="description" content="{{ meta.description or config.meta.description }}">
+  <meta name="robots" content="{{ config.meta.robots | join(',') }}">
+  <link rel="canonical" href="{{ page.url | canonical(config.url) }}">
+  <link rel="shortcut icon" href="{{ config.gravatar }}?s=128">
+  <link href="https://fonts.googleapis.com/css?family=Exo:900|Merriweather|Merriweather+Sans&display=swap" rel="stylesheet">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156130355-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-156130355-1');
+    gtag('config', '{{ config.google-analytics }}');
   </script>
-  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Love+Ya+Like+A+Sister|Merriweather|Merriweather+Sans|Montserrat|Puritan|Wellfleet|Exo:900|Teko:700&display=swap" rel="stylesheet">
-  {# <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans&display=swap" rel="stylesheet"> #}
   {% set style %}
     {% include "css/reset.css" %}
     {% include "css/typography.css" %}

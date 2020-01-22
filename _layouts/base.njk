@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ meta.lang or config.meta.lang }}">
 {% include "head.njk" %}
 <body>
   <!--
     Looks like you're an inspector? 🕵️
-    Might want to have a look at https://github.com/ivoputzer/ivoputzer.blog
+    You might want to have a look at the sources {{ config.repository }}
   -->
   {% include "nav.njk" %}
   {{ content | safe }}

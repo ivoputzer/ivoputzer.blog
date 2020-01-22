@@ -3,8 +3,8 @@ layout: base
 ---
 <article class="fade-in">
   <header>
-    {% if cover %}
-      <img src="{{ cover.src }}" alt="{{ cover.alt }}">
+    {% if image %}
+    <img src="{{ image.src }}" alt="{{ image.alt or title }}">
     {% endif %}
     <h1>{{ title }}</h1>
     {% excerpt content %}

@@ -1,16 +1,8 @@
 <nav>
   <figure>
-    <!-- <img src="{{ config.gravatar }}?s=65" alt="gravatar"> -->
     <span class="no-portrait">@ivoputzer<small>(.blog)</small></span>
   </figure>
   <ul>
-    {#
-      {% for item in menu %}
-        <li class="{{ 'active' if page.url == item.url ||  }}">
-          <a href="{{ item.url | url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    #}
     <li class="{{ 'active' if page.url == '/whoami/' }}"><a href="{{ '/whoami/' | url }}">whoami</a></li>
     <li class="{{ 'active' if page.url != '/whoami/' }}"><a href="{{ '/' | url }}">articles</a></li>
   </ul>

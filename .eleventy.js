@@ -28,12 +28,12 @@ module.exports = eleventy => {
   })
 
   eleventy.addNunjucksFilter('mincss', (code) => new CleanCSS({}).minify(code).styles)
-  eleventy.addNunjucksFilter('absoluteUrl', (url, base) => {
+  eleventy.addNunjucksFilter('canonical', (url, base) => {
     try {
-      const absolute = new URL(url, base)
-      return absolute.toString()
+      const canonical = new URL(url, base)
+      return canonical.toString()
     } catch (e) {
-      console.log('Trying to convert %o to be an absolute url with base %o and failed, returning: %o (invalid url)', url, base, url)
+      console.log('Trying to convert %o to be an canonical url with base %o and failed, returning: %o (invalid url)', url, base, url)
       return url
     }
   })
