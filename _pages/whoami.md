@@ -1,6 +1,9 @@
 ---
 layout: article
 date: Last Modified
+tags:
+  - pages
+  - whoami
 title: I'm @ivoputzer
 image:
   src: /whoami/0.jpg

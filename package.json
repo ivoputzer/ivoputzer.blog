@@ -1,7 +1,7 @@
 {
   "name": "ivoputzer.blog",
   "author": "Ivo von Putzer Reibegg <ivo.putzer@gmail.com> (https://ivoputzer.blog)",
-  "description": "A blog featuring Agile, Tech, Project Ideas, Reads, Events and everything else development-related.",
+  "description": "Blog featuring software development, agile, project ideas, events, real-life stories, cryptocurrency and everything else development-related.",
   "homepage": "https://ivoputzer.blog",
   "version": "1.0.0",
   "private": true,

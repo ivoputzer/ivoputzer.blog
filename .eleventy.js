@@ -23,6 +23,10 @@ module.exports = eleventy => {
     return body
   })
 
+  eleventy.addNunjucksShortcode('log', (...args) => {
+    console.log(...args)
+  })
+
   eleventy.addFilter('date', (date, format) => {
     return moment(date).format(format)
   })

@@ -8,13 +8,13 @@ module.exports = {
   title: '@ivoputzer\'s blog',
   meta: {
     lang: 'en',
+    author: 'Ivo von Putzer Reibegg',
+    description: pkg.description,
+    robots: ['index', 'follow'],
     image: {
       src: '/whoami/0.jpg',
       alt: 'Ivo von Putzer Reibegg'
-    },
-    author: 'Ivo von Putzer Reibegg',
-    description: '@ivoputzer’s blog about software development, project ideas, real-life stories, events, cryptocurrency and whatever else programming.',
-    robots: ['index', 'follow']
+    }
   },
   google: {
     analytics: 'UA-156130355-1'
