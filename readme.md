@@ -1,27 +1,26 @@
 <p align="center">
-	<img src="_static/whoami.jpg" alt="Ivo von Putzer Reibegg Avatar" width="100" align="center" style="border-radius: 50%" />
+	<img src="_static/whoami/0.jpg" alt="Ivo von Putzer Reibegg Avatar" width="100" align="center" style="border-radius: 50%" />
 </p>
 
 <p align="center">
   <a href="https://ivoputzer.blog">
-    <strong>ivoputzer.blog</strong>
+    <strong>https://ivoputzer.blog</strong>
   </a>
 </p>
 
 <p align="center">
-  <em>Eleventy · CSS · HTML · CSS · Github Pages</em>
+  <em>Github Pages · Eleventy · HTML · CSS · JAVASCRIPT</em>
   <br>
   <br>
   <a href="https://actions-badge.atrox.dev/ivoputzer/ivoputzer.blog/goto?ref=master">
     <img alt="Build Status" src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fivoputzer%2Fivoputzer.blog%2Fbadge%3Fref%3Dmaster&style=for-the-badge" />
   </a>
 </p>
-
-## What is used?
-- Eleventy static site generator
-- Templating using Nunjucks
 <!--
-
+## What is used?
+- [x] Automatic Github Pages Deployment
+- [x] Eleventy
+- [x] Templating done with Nunjucks
 - [ ] A good handful of SEO meta tags set up
 - [ ] Sitemap generated automatically
 - [ ] Pull in latest instagram posts on build (works with IFTTT to trigger a build)
