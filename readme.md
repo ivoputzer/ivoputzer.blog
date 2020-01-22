@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://ivoputzer.blog">
-    <strong>https://ivoputzer.blog</strong>
+    <strong>//ivoputzer.blog</strong>
   </a>
 </p>
 
