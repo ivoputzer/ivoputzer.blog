@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="_static/whoami/0.jpg" alt="Ivo von Putzer Reibegg Avatar" width="100" align="center" style="border-radius: 50%" />
+	<img src="_static/whoami/0.jpg" alt="Ivo von Putzer Reibegg Avatar" width="100" align="center" class="avatar" style="border-radius: 50%">
 </p>
 
 <p align="center">
