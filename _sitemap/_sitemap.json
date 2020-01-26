@@ -1,0 +1,4 @@
+{
+  "tags" : "sitemap",
+  "permalink" : "/sitemap.{{ page.fileSlug }}"
+}

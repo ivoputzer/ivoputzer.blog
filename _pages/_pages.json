@@ -1,5 +1,0 @@
-{
-  "layout": "page",
-  "tags": "pages",
-  "permalink" : "/{{ page.fileSlug }}/index.html"
-}

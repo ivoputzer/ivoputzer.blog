@@ -250,6 +250,9 @@ nav li a:hover {
   }
 }
 
+main article {
+  padding-bottom: 4rem;
+}
 
 main article footer {
   display: flex;

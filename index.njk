@@ -1,38 +1,35 @@
 ---
-layout: page
+layout: main
 pagination:
-  data: collections.articles
-  size: 5
+  data: collections.blog
+  size: 2
   reverse: true
 sitemap:
   priority: 1
   changes: daily
 ---
-<main class="fade-in">
 {% for article in pagination.items %}
   <article>
-    <div>
-      <header>
-        <h1>
-          <a href="{{ article.url | url }}">
-            {{ article.data.title }}
-          </a>
-        </h1>
-      </header>
-      {% excerpt article.templateContent %}
-      <footer>
-        <span>
-          <a class="cta" style="line-height: 1.15" href="{{ article.url | url }}">
-            Continue reading...
-          </a>
-        </span>
-        <span class="reading-time">
-          Reading Time <span>{{ article | readingTime }}</span>
-        </span>
-        <span class="publication-date">
-          Published Since <time datetime="{{ article.date.toISOString() }}">{{ article.date | date('YYYY-MM-DD') }} </time>
-        </span>
-      </footer>
+    <header>
+      <h1>
+        <a href="{{ article.url | url }}">
+          {{ article.data.title }}
+        </a>
+      </h1>
+    </header>
+    {% excerpt article.templateContent %}
+    <footer>
+      <span>
+        <a class="cta" style="line-height: 1.15" href="{{ article.url | url }}">
+          Continue reading...
+        </a>
+      </span>
+      <span class="reading-time">
+        Reading Time <span>{{ article | readingTime }}</span>
+      </span>
+      <span class="publication-date">
+        Published Since <time datetime="{{ article.date.toISOString() }}">{{ article.date | date('YYYY-MM-DD') }} </time>
+      </span>
+    </footer>
   </article>
-{% endfor %}
-</main>
+ {% endfor %}

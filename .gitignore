@@ -1,5 +1,6 @@
 node_modules/
-draft/
+_draft/
 _site/
 .ssh/
+.DS_Store
 todo.md

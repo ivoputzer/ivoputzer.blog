@@ -4,10 +4,10 @@ layout: base
 <article class="fade-in">
   <header>
     {% if image %}
-    <img src="{{ image.src }}" alt="{{ image.alt or title }}">
+      <img src="{{ image.src }}" alt="{{ image.alt or title }}">
     {% endif %}
-    <h1>{{ title }}</h1>
+      <h1>{{ title }}</h1>
     {% excerpt content %}
   </header>
-    {% body content %}
+  {% body content %}
 </article>

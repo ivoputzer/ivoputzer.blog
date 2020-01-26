@@ -1,5 +1,4 @@
 ---
-date: "2020-01-22"
 title: "Inception: How it all (re)started!"
 image:
   src: /blog/inception-how-it-all-re-started/0.jpg
