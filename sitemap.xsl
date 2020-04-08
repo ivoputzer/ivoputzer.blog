@@ -7,17 +7,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <xsl:output method="html" indent="yes" encoding="UTF-8"/>
   <xsl:template match="/">
-    <html class="xsl">
+    <html class="sitemap">
       <head>
         <title>
           Sitemap
           <xsl:if test="sitemap:sitemapindex">Index</xsl:if>
         </title>
-        
-        
+        <link rel="shortcut icon" href="//gravatar.com/avatar/5d34a6bf73323076e6c8ddfd10831c90?s=128" />
+        <link rel="canonical" href="/sitemap.xsl" />
         <style>
           <![CDATA[
-            @import url('https://fonts.googleapis.com/css?family=Architects+Daughter|Love+Ya+Like+A+Sister|Merriweather|Merriweather+Sans|Montserrat|Puritan|Wellfleet|Exo:900|Teko:700&display=swap');
+            @font-face {
+              font-family: 'Exo';
+              font-style: normal;
+              font-weight: 900;
+              src: local('Exo Black'), local('Exo-Black'), url(https://fonts.gstatic.com/s/exo/v9/4UaDrEtFpBIa8Fm29xLjza_B4g.woff2) format('woff2');
+              unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            @font-face {
+              font-family: 'Merriweather';
+              font-style: normal;
+              font-weight: 400;
+              src: local('Merriweather Regular'), local('Merriweather-Regular'), url(https://fonts.gstatic.com/s/merriweather/v21/u-440qyriQwlOrhSvowK_l5-fCZMdeX3rg.woff2) format('woff2');
+              unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            @font-face {
+              font-family: 'Merriweather Sans';
+              font-style: normal;
+              font-weight: 400;
+              src: local('Merriweather Sans'), local('MerriweatherSans-Regular'), url(https://fonts.gstatic.com/s/merriweathersans/v11/2-c99IRs1JiJN1FRAMjTN5zd9vgsFHX1QjXp8Bte.woff2) format('woff2');
+              unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
             * {
   box-sizing: border-box;
 }
@@ -593,6 +613,9 @@ nav li a:hover {
   }
 }
 
+main article {
+  padding-bottom: 4rem;
+}
 
 main article footer {
   display: flex;
@@ -619,11 +642,12 @@ main article footer :first-child {
   padding: .2rem 1.1rem;
 }
 
+            
           ]]>
         </style>
       </head>
-      <body class="ph3 pb3 mid-gray">
-        <header class="mw8 pv4 center">
+      <body>
+        <header>
           <nav>
   <figure>
     <span class="no-portrait">@ivoputzer<small>(.blog)</small></span>
@@ -634,32 +658,32 @@ main article footer :first-child {
   </ul>
 </nav>
 
-          <div class="flex items-center">
-            <h1 class="ma0 mr2 f2 blue">Sitemap</h1>
+          <div>
+            <h1>Sitemap</h1>
             <xsl:if test="sitemap:sitemapindex">
-              <span class="dib mr2 ph3 pv1 f6 normal mid-gray bg-light-blue br-pill">Index</span>
+              <span>Index</span>
             </xsl:if>
             <xsl:if test="sitemap:urlset/sitemap:url/image:image">
-              <span class="dib mr2 ph3 pv1 f6 normal mid-gray bg-light-blue br-pill">Images</span>
+              <span>Images</span>
             </xsl:if>
             <xsl:if test="sitemap:urlset/sitemap:url/video:video">
-              <span class="dib mr2 ph3 pv1 f6 normal mid-gray bg-light-blue br-pill">Video</span>
+              <span>Video</span>
             </xsl:if>
             <xsl:if test="sitemap:urlset/sitemap:url/xhtml:link">
-              <span class="dib mr2 ph3 pv1 f6 normal mid-gray bg-light-blue br-pill">Xhtml</span>
+              <span>Xhtml</span>
             </xsl:if>
           </div>
-          <h3 class="ma0 mt4 f4 normal">
+          <h3>
             <xsl:choose>
               <xsl:when test="sitemap:sitemapindex">
                 This index contains
-                <strong class="blue">
+                <strong>
                   <xsl:value-of select="count(sitemap:sitemapindex/sitemap:sitemap)"/>
                 </strong> sitemaps.
               </xsl:when>
               <xsl:otherwise>
                 This index contains
-                <strong class="blue">
+                <strong>
                   <xsl:value-of select="count(sitemap:urlset/sitemap:url)"/>
                 </strong>
                 URLs.
@@ -739,35 +763,35 @@ main article footer :first-child {
     </html>
   </xsl:template>
   <xsl:template match="sitemap:sitemapindex">
-    <div class="mw8 center">
-      <div class="overflow-auto">
-        <table class="w-100 f6 b--silver ba bw1" cellspacing="0">
-          <thead class="bg-silver">
+    <div>
+      <div>
+        <table cellspacing="0">
+          <thead>
             <tr>
-              <th class="pa3 fw6 tl dark-gray"></th>
-              <th class="pa3 fw6 tl dark-gray">URL</th>
-              <th class="pa3 fw6 tr dark-gray">Last Modified</th>
+              <th>#</th>
+              <th class="text-left">URL</th>
+              <th>Last Modified</th>
             </tr>
           </thead>
-          <tbody class="lh-copy bg-near-white">
+          <tbody>
             <xsl:for-each select="sitemap:sitemap">
-              <tr class="hover-bg-white">
+              <tr>
                 <xsl:variable name="loc">
                   <xsl:value-of select="sitemap:loc"/>
                 </xsl:variable>
                 <xsl:variable name="pno">
                   <xsl:value-of select="position()"/>
                 </xsl:variable>
-                <td class="pa3 tc b bb b--silver">
+                <td>
                   <xsl:value-of select="$pno"/>
                 </td>
-                <td class="pa3 b bb b--silver">
-                  <a href="{$loc}" class="link blue">
+                <td>
+                  <a href="{$loc}">
                     <xsl:value-of select="sitemap:loc"/>
                   </a>
                 </td>
                 <xsl:if test="sitemap:lastmod">
-                  <td class="pa3 tr bb b--silver">
+                  <td>
                     <xsl:value-of select="concat(substring(sitemap:lastmod, 0, 11), concat(' ', substring(sitemap:lastmod, 12, 5)), concat(' ', substring(sitemap:lastmod, 20, 6)))"/>
                   </td>
                 </xsl:if>
@@ -780,39 +804,39 @@ main article footer :first-child {
     </div>
   </xsl:template>
   <xsl:template match="sitemap:urlset">
-    <div class="mw8 center">
-      <div class="overflow-auto">
-        <table class="w-100 f6 b--silver ba bw1" cellspacing="0">
-          <thead class="bg-silver">
+    <div>
+      <div>
+        <table cellspacing="0">
+          <thead>
             <tr>
-              <th class="pa3 fw6 tl dark-gray"></th>
-              <th class="pa3 fw6 tl dark-gray">URL</th>
+              <th></th>
+              <th>URL</th>
               <xsl:if test="sitemap:url/sitemap:changefreq">
-                <th class="pa3 fw6 tr dark-gray">Change&#160;Freq.</th>
+                <th>Change&#160;Freq.</th>
               </xsl:if>
               <xsl:if test="sitemap:url/sitemap:priority">
-                <th class="pa3 fw6 tr dark-gray">Priority</th>
+                <th>Priority</th>
               </xsl:if>
               <xsl:if test="sitemap:url/sitemap:lastmod">
-                <th class="pa3 fw6 tr dark-gray">Last Modified</th>
+                <th>Last Modified</th>
               </xsl:if>
             </tr>
           </thead>
-          <tbody class="lh-copy bg-near-white">
+          <tbody>
             <xsl:for-each select="sitemap:url">
-              <tr class="hover-bg-white">
+              <tr>
                 <xsl:variable name="loc">
                   <xsl:value-of select="sitemap:loc"/>
                 </xsl:variable>
                 <xsl:variable name="pno">
                   <xsl:value-of select="position()"/>
                 </xsl:variable>
-                <td class="pa3 tc b bb b--silver">
+                <td>
                   <xsl:value-of select="$pno"/>
                 </td>
-                <td class="pa3 bb b--silver">
+                <td>
                   <p>
-                    <a href="{$loc}" class="link blue">
+                    <a href="{$loc}">
                       <xsl:value-of select="sitemap:loc"/>
                     </a>
                   </p>
@@ -823,8 +847,8 @@ main article footer :first-child {
                 <xsl:apply-templates select="sitemap:changefreq"/>
                 <xsl:apply-templates select="sitemap:priority"/>
                 <xsl:if test="sitemap:lastmod">
-                  <td class="pa3 tr bb b--silver">
-                    <xsl:value-of select="concat(substring(sitemap:lastmod, 0, 11), concat(' ', substring(sitemap:lastmod, 12, 5)), concat(' ', substring(sitemap:lastmod, 20, 6)))"/>
+                  <td>
+                    <xsl:value-of select="concat(substring(sitemap:lastmod, 0, 11), concat(' ', substring(sitemap:lastmod, 12, 5)))"/>
                   </td>
                 </xsl:if>
               </tr>
@@ -836,7 +860,7 @@ main article footer :first-child {
   </xsl:template>
   <xsl:template match="sitemap:loc|sitemap:lastmod|image:loc|image:caption|video:*"></xsl:template>
   <xsl:template match="sitemap:changefreq|sitemap:priority">
-    <td class="pa3 tr bb b--silver">
+    <td>
       <xsl:apply-templates/>
     </td>
   </xsl:template>
@@ -846,21 +870,21 @@ main article footer :first-child {
     </xsl:variable>
     <p>
       <strong>Xhtml: </strong>
-      <a href="{$altloc}" class="mr2 link blue">
+      <a href="{$altloc}">
         <xsl:value-of select="@href"/>
       </a>
       <xsl:if test="@hreflang">
-        <small class="dib mr2 ph1 pv1 tracked lh-solid white bg-silver br-pill">
+        <small>
           <xsl:value-of select="@hreflang"/>
         </small>
       </xsl:if>
       <xsl:if test="@rel">
-        <small class="dib mr2 ph2 pv1 tracked lh-solid white bg-silver br-pill">
+        <small>
           <xsl:value-of select="@rel"/>
         </small>
       </xsl:if>
       <xsl:if test="@media">
-        <small class="dib mr2 ph2 pv1 tracked lh-solid white bg-silver br-pill">
+        <small>
           <xsl:value-of select="@media"/>
         </small>
       </xsl:if>
@@ -873,11 +897,11 @@ main article footer :first-child {
     </xsl:variable>
     <p>
       <strong>Image: </strong>
-      <a href="{$loc}" class="mr2 link blue">
+      <a href="{$loc}">
         <xsl:value-of select="image:loc"/>
       </a>
       <xsl:if test="image:caption">
-        <span class="i gray">
+        <span>
           <xsl:value-of select="image:caption"/>
         </span>
       </xsl:if>
@@ -900,7 +924,7 @@ main article footer :first-child {
     </xsl:variable>
     <p>
       <strong>Video: </strong>
-      <a href="{$loc}" class="mr2 link blue">
+      <a href="{$loc}">
         <xsl:choose>
           <xsl:when test="video:player_loc != ''">
             <xsl:value-of select="video:player_loc"/>
@@ -910,9 +934,9 @@ main article footer :first-child {
           </xsl:otherwise>
         </xsl:choose>
       </a>
-      <a href="{$thumb_loc}" class="dib mr2 ph2 pv1 tracked lh-solid link white bg-silver hover-bg-blue br-pill">thumb</a>
+      <a href="{$thumb_loc}">thumb</a>
       <xsl:if test="video:title">
-        <span class="i gray">
+        <span>
           <xsl:value-of select="video:title"/>
         </span>
       </xsl:if>
