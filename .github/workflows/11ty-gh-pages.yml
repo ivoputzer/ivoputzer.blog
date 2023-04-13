@@ -1,0 +1,37 @@
+name: Deploy 11ty to GitHub Pages
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - master
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3 # https://github.com/actions/checkout
+      - uses: actions/configure-pages@v3 # https://github.com/actions/configure-pages
+      - uses: actions/setup-node@master
+        with:
+          node-version: 12.x
+      - run: npm install
+      - run: |
+          npm run build
+          touch _site/.nojekyll
+          cat package.json | jq --raw-output ".name" > _site/CNAME
+      - uses: actions/upload-pages-artifact@v1 # https://github.com/actions/upload-pages-artifact
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v1
