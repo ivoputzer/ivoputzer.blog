@@ -19,7 +19,7 @@ jobs:
       - uses: actions/configure-pages@v3 # https://github.com/actions/configure-pages
       - uses: actions/setup-node@master
         with:
-          node-version: 12.x
+          node-version: 16.x
       - run: npm install
       - run: |
           npm run build
